@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class BigText extends StatelessWidget {
+class SmallText extends StatelessWidget {
   Color? color;
   final String text;
   double size;
