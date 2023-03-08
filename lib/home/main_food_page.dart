@@ -1,4 +1,5 @@
 import 'package:appfoodfullstack/utils/colors.dart';
+import 'package:appfoodfullstack/widgets/big_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 children: [
                   Column(
                     children: [
-                      Text("Country"),
+                      BigText(text: "Italia", color: AppColors.mainColor,),
                       Text("City")
                     ],
                   ),
