@@ -1,3 +1,4 @@
+import 'package:appfoodfullstack/home/food_page_body.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
 import 'package:appfoodfullstack/widgets/small_text.dart';
@@ -50,7 +51,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ],
               ),
             ),
-          )
+          ),
+          FoodPageBody(),
         ],
       ),
     );
