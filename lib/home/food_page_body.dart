@@ -14,7 +14,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     return Container(
       height: 320,
       child: PageView.builder(
-          itemCount: 5,
+          itemCount: 2,
           itemBuilder: (context, position){
         return _buildPageItem(position);
       }),
