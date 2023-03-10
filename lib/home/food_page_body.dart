@@ -22,19 +22,40 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     );
   }
   Widget _buildPageItem(int index){
-    return Container(
-      height: 220,
-      margin: EdgeInsets.only(left: 5, right: 5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30),
-        color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
-        image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage(
-            "assets/image/food0.png"
-      )
-      )
-      ),
+    return Stack(
+      children: [
+        Container(
+          height: 220,
+          margin: EdgeInsets.only(left: 5, right: 5),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(
+                      "assets/image/food0.png"
+                  )
+              )
+          ),
+        ),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            height: 150,
+            margin: EdgeInsets.only(left: 40, right: 40),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage(
+                        "assets/image/food0.png"
+                    )
+                )
+            ),
+          ),
+        )
+      ],
     );
   }
 }
