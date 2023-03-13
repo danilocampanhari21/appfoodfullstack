@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
+import 'package:appfoodfullstack/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -45,7 +46,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 140,
+            height: 120,
             margin: EdgeInsets.only(left: 30, right: 30, bottom: 15),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
@@ -62,8 +63,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   Row(
                     children: [
                       Wrap(
-                        children: List.generate(5, (index) => Icon(Icons.star,color: AppColors.mainColor, size: 15,)),
-                      )
+                        children: List.generate(5, (index) {return Icon(Icons.star,color: AppColors.mainColor, size: 15,);}),
+                      ),
+                      SizedBox(width: 10,),
+                      SmallText(text: "4.5"),
+                      SizedBox(width: 10,),
+                      SmallText(text: "1287"),
+                      SizedBox(width: 10,),
+                      SmallText(text: "comments"),
                     ],
                   )
                 ],
