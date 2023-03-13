@@ -82,11 +82,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
                           iconColor: AppColors.iconColor1),
                       IconAndTextWidget(icon: Icons.location_on,
-                          text: "Normal",
+                          text: "1.7km",
 
                           iconColor: AppColors.mainColor),
                       IconAndTextWidget(icon: Icons.access_time_rounded,
-                          text: "Normal",
+                          text: "32min",
 
                           iconColor: AppColors.iconColor2)
                     ],
