@@ -41,17 +41,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 150,
-            margin: EdgeInsets.only(left: 40, right: 40),
+            height: 140,
+            margin: EdgeInsets.only(left: 40, right: 40, bottom: 15),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                        "assets/image/food0.png"
-                    )
-                )
+                color: Colors.white,
+
             ),
           ),
         )
