@@ -80,6 +80,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       IconAndTextWidget(icon: Icons.circle_sharp,
                           text: "Normal",
 
+                          iconColor: AppColors.iconColor1),
+                      IconAndTextWidget(icon: Icons.circle_sharp,
+                          text: "Normal",
+
+                          iconColor: AppColors.iconColor1),
+                      IconAndTextWidget(icon: Icons.circle_sharp,
+                          text: "Normal",
+
                           iconColor: AppColors.iconColor1)
                     ],
                   )
