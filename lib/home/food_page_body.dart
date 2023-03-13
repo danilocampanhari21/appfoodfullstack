@@ -81,14 +81,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                           text: "Normal",
 
                           iconColor: AppColors.iconColor1),
-                      IconAndTextWidget(icon: Icons.circle_sharp,
+                      IconAndTextWidget(icon: Icons.location_on,
                           text: "Normal",
 
-                          iconColor: AppColors.iconColor1),
-                      IconAndTextWidget(icon: Icons.circle_sharp,
+                          iconColor: AppColors.mainColor),
+                      IconAndTextWidget(icon: Icons.access_time_rounded,
                           text: "Normal",
 
-                          iconColor: AppColors.iconColor1)
+                          iconColor: AppColors.iconColor2)
                     ],
                   )
                 ],
