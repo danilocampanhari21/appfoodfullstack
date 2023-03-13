@@ -8,6 +8,7 @@ class IconAndTextWidget extends StatelessWidget {
   final Color iconColor;
   const IconAndTextWidget({Key? key,
     required this.icon,
+
     required this.text,
 
     required this.iconColor}) : super(key: key);
