@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
+import 'package:appfoodfullstack/widgets/icon_and_text_widget.dart';
 import 'package:appfoodfullstack/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   SizedBox(height: 20,),
                   Row(
                     children: [
+                      IconAndTextWidget(icon: Icons.circle_sharp,
+                          text: "Normal",
 
+                          iconColor: AppColors.iconColor1)
                     ],
                   )
                 ],
