@@ -72,6 +72,12 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       SizedBox(width: 10,),
                       SmallText(text: "comments"),
                     ],
+                  ),
+                  SizedBox(height: 20,),
+                  Row(
+                    children: [
+
+                    ],
                   )
                 ],
               ),
