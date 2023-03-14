@@ -6,6 +6,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/dimensions.dart';
+
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
 
@@ -17,7 +19,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   var _currPageValue=0.0;
   double _scaleFactor=0.8;
-  double _height=220;
+  double _height=Dimensions.pageViewContainer;
   @override
   void initState(){
     super.initState();
