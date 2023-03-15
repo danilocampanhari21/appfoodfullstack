@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/home/food_page_body.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
+import 'package:appfoodfullstack/utils/dimensions.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
 import 'package:appfoodfullstack/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
@@ -24,7 +25,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
 
             child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 15),
-              padding: EdgeInsets.only(left: 20, right: 20),
+              padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
