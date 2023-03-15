@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:appfoodfullstack/widgets/small_text.dart';
 import 'package:flutter/cupertino.dart';
 
