@@ -6,7 +6,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/dimensions.dart';
+import '../../utils/dimensions.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
@@ -84,9 +84,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           ),
         ),
         //list of food and images
-        Container(
-          height: 900,
-          child: ListView.builder(
+
+
+        ListView.builder(
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
               itemCount: 10,
@@ -97,8 +97,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     children: [
                       //image section
                       Container(
-                        width: 120,
-                        height: 120,
+                        width: Dimensions.listViewImgSize,
+                        height: Dimensions.listViewImgSize,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(Dimensions.radius20),
                             color: Colors.white38,
@@ -113,7 +113,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       //text container
                       Expanded(
                         child: Container(
-                          height: 100,
+                          height: Dimensions.listViewTextContSize,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
                               topRight: Radius.circular(Dimensions.radius20),
@@ -158,7 +158,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   ),
                 );
               }),
-        )
+
       ],
     );
   }
