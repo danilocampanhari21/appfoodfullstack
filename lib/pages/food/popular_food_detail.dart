@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/widgets/app_column.dart';
 import 'package:appfoodfullstack/widgets/app_icon.dart';
+import 'package:appfoodfullstack/widgets/exandable_text_widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -67,12 +68,13 @@ class PopularFoodDetail extends StatelessWidget {
                   children: [
                     AppColumn(text: "Chinese Side"),
                     SizedBox(height: Dimensions.height20,),
-                    BigText(text: "Introdução")
+                    BigText(text: "Introdução"),
+                    ExpandableTextWidget(text: "Frango marinado com um espaço vago para conseguir escrever qualquer coisa para haver espaço pois o verdadeiro objetivo é deixar grandes espaços para aparecer o famoso 'mostrar mais' estou colocando isso aqui e por isso eu preciso escrever um monte de coisa ... mesmo que sem sentido nenhum .. pensando aqui: será que é o suficiente? vou apertar enter para continuar! ")
                   ],
                 ),
 
           )),
-          //expandable the widget
+
         ],
       ),
       bottomNavigationBar: Container(
