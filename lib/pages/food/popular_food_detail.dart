@@ -45,11 +45,16 @@ class PopularFoodDetail extends StatelessWidget {
           Positioned(
               left: 0,
               right: 0,
-              top: Dimensions.popularFoodImgSize,
+              bottom: 0,
+              top: Dimensions.popularFoodImgSize-20,
               child: Container(
+
               padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20, top: Dimensions.height20),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(Dimensions.radius20),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(Dimensions.radius20),
+                    topLeft: Radius.circular(Dimensions.radius20),
+                  ),
                   color: Colors.white
                 ),
                 child: Column(
@@ -57,6 +62,7 @@ class PopularFoodDetail extends StatelessWidget {
                   children: [
                     BigText(text: "Chinese Side"),
                     SizedBox(height: Dimensions.height10,),
+                    //comments section
                     Row(
                       children: [
                         Wrap(
