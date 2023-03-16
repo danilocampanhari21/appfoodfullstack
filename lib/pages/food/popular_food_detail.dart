@@ -32,6 +32,7 @@ class PopularFoodDetail extends StatelessWidget {
               right: Dimensions.width20,
               left: Dimensions.width20,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 AppIcon(icon: Icons.arrow_back_ios),
                 AppIcon(icon: Icons.shopping_cart_outlined)
