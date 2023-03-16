@@ -70,6 +70,11 @@ class PopularFoodDetail extends StatelessWidget {
           ))
         ],
       ),
+      bottomNavigationBar: Container(
+        height: 120,
+        padding: EdgeInsets.only(top: Dimensions.height30, bottom: Dimensions.height30, left: Dimensions.width20, right: Dimensions.width20),
+
+      ),
     );
   }
 }
