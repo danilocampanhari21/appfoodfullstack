@@ -58,7 +58,7 @@ class PopularFoodDetail extends StatelessWidget {
                   ),
                   color: Colors.white
                 ),
-                child: AppColumn(),
+                child: AppColumn(text: "Chinese Side"),
 
           ))
         ],
