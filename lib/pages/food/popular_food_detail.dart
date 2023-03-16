@@ -71,7 +71,8 @@ class PopularFoodDetail extends StatelessWidget {
                   ],
                 ),
 
-          ))
+          )),
+          //expandable the widget
         ],
       ),
       bottomNavigationBar: Container(
