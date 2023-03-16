@@ -18,6 +18,7 @@ class PopularFoodDetail extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          //background image
           Positioned(
               right: 0,
               left: 0,
@@ -33,6 +34,7 @@ class PopularFoodDetail extends StatelessWidget {
                   )
                 ),
           )),
+          //icon widgets
           Positioned(
               top: Dimensions.height45,
               right: Dimensions.width20,
@@ -44,6 +46,7 @@ class PopularFoodDetail extends StatelessWidget {
                 AppIcon(icon: Icons.shopping_cart_outlined)
               ],
           )),
+          //introduction of food
           Positioned(
               left: 0,
               right: 0,
@@ -72,7 +75,7 @@ class PopularFoodDetail extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        height: 120,
+        height: Dimensions.bottomHeightBar,
         padding: EdgeInsets.only(top: Dimensions.height30, bottom: Dimensions.height30, left: Dimensions.width20, right: Dimensions.width20),
         decoration: BoxDecoration(
           color: AppColors.buttonBackgroundColor,
