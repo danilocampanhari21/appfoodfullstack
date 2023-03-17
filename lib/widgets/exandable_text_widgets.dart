@@ -41,7 +41,9 @@ class _ExpandableTextWidgetState extends State<ExpandableTextWidget> {
           SmallText(text:hiddenText?(firstHalf+"..."):(firstHalf+secondHalf)),
           InkWell(
             onTap: (){
-
+              setState(() {
+                hiddenText=!hiddenText;
+              });
             },
             child: Row(
               children: [
