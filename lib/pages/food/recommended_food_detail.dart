@@ -23,6 +23,11 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                 fit: BoxFit.cover,
               ),
             ),
+          ),
+          SliverToBoxAdapter(
+            child: Text(
+              ""
+            ),
           )
         ],
       ),
