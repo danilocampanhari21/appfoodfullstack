@@ -72,20 +72,29 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              AppIcon(
-                  IconSize: Dimensions.iconSize24,
-                  iconColor:Colors.white,
-                  backgroundColor: AppColors.mainColor,
-                  icon: Icons.remove),
-              AppIcon(
-                  IconSize: Dimensions.iconSize24,
-                  iconColor:Colors.white,
-                  backgroundColor: AppColors.mainColor,
-                  icon: Icons.add),
-            ],
+          Container(
+            padding: EdgeInsets.only(
+              left: Dimensions.width20*2.5,
+                right: Dimensions.width20*2.5,
+              top: Dimensions.height10,
+              bottom: Dimensions.height10,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                AppIcon(
+                    IconSize: Dimensions.iconSize24,
+                    iconColor:Colors.white,
+                    backgroundColor: AppColors.mainColor,
+                    icon: Icons.remove),
+                BigText(text: "12.88"+"X"+"0"),
+                AppIcon(
+                    IconSize: Dimensions.iconSize24,
+                    iconColor:Colors.white,
+                    backgroundColor: AppColors.mainColor,
+                    icon: Icons.add),
+              ],
+            ),
           )
         ],
       ),
