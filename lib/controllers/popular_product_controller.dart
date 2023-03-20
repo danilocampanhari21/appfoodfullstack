@@ -8,6 +8,6 @@ class PopularProductController extends GetxController{
   List<dynamic> _popularProductList=[];
 
   Future<void> getPopularProductList()async{
-    popularProductRepo.getPopularProductList();
+    Response response = await popularProductRepo.getPopularProductList();
   }
 }
