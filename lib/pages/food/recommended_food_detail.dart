@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/utils/dimensions.dart';
+import 'package:appfoodfullstack/widgets/app_icon.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,15 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                AppIcon(icon: Icons.clear),
+                AppIcon(icon: Icons.shopping_cart_outlined)
+              ],
+            ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(0),
+              preferredSize: Size.fromHeight(20),
               child: Container(
                 color: Colors.white,
                 child: Center(child: BigText(size: Dimensions.font26,text:"Sliver and Bar")),
