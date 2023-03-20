@@ -87,7 +87,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                     iconColor:Colors.white,
                     backgroundColor: AppColors.mainColor,
                     icon: Icons.remove),
-                BigText(text: "12.88"+"X"+"0"),
+                BigText(text: "\€12.88"+"X"+"0", color: AppColors.mainBlackColor,size: Dimensions.font26, ),
                 AppIcon(
                     IconSize: Dimensions.iconSize24,
                     iconColor:Colors.white,
