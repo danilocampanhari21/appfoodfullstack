@@ -69,6 +69,17 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
           ),
         ],
       ),
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+            children: [
+              AppIcon(icon: Icons.remove),
+              AppIcon(icon: Icons.add)
+            ],
+          )
+        ],
+      ),
     );
   }
 }
