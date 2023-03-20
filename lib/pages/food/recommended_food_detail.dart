@@ -19,6 +19,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            toolbarHeight: 80,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
