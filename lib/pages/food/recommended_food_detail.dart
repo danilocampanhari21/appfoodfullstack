@@ -33,7 +33,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
               preferredSize: Size.fromHeight(20),
               child: Container(
 
-                child: Center(child: BigText(size: Dimensions.font26,text:"Sliver and Bar")),
+                child: Center(child: BigText(size: Dimensions.font26,text:"Chinese Side")),
                 width: double.maxFinite,
                 padding: EdgeInsets.only(top: 5, bottom: 10),
                 decoration: BoxDecoration(
