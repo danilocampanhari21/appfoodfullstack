@@ -19,7 +19,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            toolbarHeight: 80,
+            toolbarHeight: 70,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -30,10 +30,17 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
             bottom: PreferredSize(
               preferredSize: Size.fromHeight(20),
               child: Container(
-                color: Colors.white,
+
                 child: Center(child: BigText(size: Dimensions.font26,text:"Sliver and Bar")),
                 width: double.maxFinite,
                 padding: EdgeInsets.only(top: 5, bottom: 10),
+                decoration: BoxDecoration(
+                color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(Dimensions.radius20),
+                    topRight: Radius.circular(Dimensions.radius20)
+                  )
+                ),
               ),
             ),
 
