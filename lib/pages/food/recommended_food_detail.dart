@@ -75,7 +75,9 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              AppIcon(iconColor:Colors.white,
+              AppIcon(
+                  IconSize: Dimensions.iconSize24,
+                  iconColor:Colors.white,
                   backgroundColor: AppColors.mainColor,
                   icon: Icons.remove),
               AppIcon(icon: Icons.add)
