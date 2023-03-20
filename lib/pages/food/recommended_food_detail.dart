@@ -80,7 +80,11 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                   iconColor:Colors.white,
                   backgroundColor: AppColors.mainColor,
                   icon: Icons.remove),
-              AppIcon(icon: Icons.add)
+              AppIcon(
+                  IconSize: Dimensions.iconSize24,
+                  iconColor:Colors.white,
+                  backgroundColor: AppColors.mainColor,
+                  icon: Icons.add),
             ],
           )
         ],
