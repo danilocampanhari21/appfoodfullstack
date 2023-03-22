@@ -1,8 +1,8 @@
 class Product {
-  int? totalSize;
-  int? typeId;
-  int? offset;
-  List<ProductModel>? products;
+  int? _totalSize;
+  int? _typeId;
+  int? _offset;
+  late List<ProductModel>? products;
 
   Product({this.totalSize, this.typeId, this.offset, this.products});
 
