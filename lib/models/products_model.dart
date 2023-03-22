@@ -14,7 +14,23 @@ class Product {
       products = <Products>[];
       json['products'].forEach((v) {
         products!.add(new Products.fromJson(v));
-      })
+      });
     }
   }
+
+}
+
+class Products {
+  int? id;
+  String? name;
+  String? description;
+  int? price;
+  int? stars;
+  String? img;
+  String? location;
+  String? createAt;
+  String? updateAt;
+  int? typeId;
+
+
 }
