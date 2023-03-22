@@ -9,9 +9,9 @@ class Product {
   }
 
   Product.fromJson(Map<String, dynamic> json) {
-    totalSize = json['total_size'];
-    typeId = json['type_id'];
-    offset = json['offset'];
+    _totalSize = json['total_size'];
+    _typeId = json['type_id'];
+    _offset = json['offset'];
     if(json['products'] != null) {
       products = <ProductModel>[];
       json['products'].forEach((v) {
