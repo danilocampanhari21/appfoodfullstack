@@ -20,7 +20,7 @@ class Product {
 
 }
 
-class Products {
+class ProductModel {
   int? id;
   String? name;
   String? description;
@@ -32,5 +32,15 @@ class Products {
   String? updateAt;
   int? typeId;
 
-
+  ProductModel(
+  {this.id,
+    this.name,
+    this.description,
+    this.price,
+    this.stars,
+    this.img,
+    this.location,
+    this.createAt,
+    this.updateAt,
+    this.typeId});
 }
