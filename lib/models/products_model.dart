@@ -43,4 +43,18 @@ class ProductModel {
     this.createAt,
     this.updateAt,
     this.typeId});
+
+  ProductModel.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    name = json['name'];
+    description = json['description'];
+    price = json['price'];
+    stars = json['stars'];
+    img = json['img'];
+    location = json['location'];
+    createAt = json['createAt'];
+    updateAt = json['updateAt'];
+    typeId = json['typeId'];
+  }
+
 }
