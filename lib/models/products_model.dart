@@ -4,7 +4,9 @@ class Product {
   int? _offset;
   late List<ProductModel>? products;
 
-  Product({this.totalSize, this.typeId, this.offset, this.products});
+  Product({required totalSize, required typeId, required offset, required products}){
+
+  }
 
   Product.fromJson(Map<String, dynamic> json) {
     totalSize = json['total_size'];
