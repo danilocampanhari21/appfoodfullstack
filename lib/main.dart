@@ -1,3 +1,4 @@
+import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/pages/food/popular_food_detail.dart';
 import 'package:appfoodfullstack/pages/food/recommended_food_detail.dart';
 import 'package:appfoodfullstack/pages/home/main_food_page.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Get.
+    Get.find<PopularProductController>().getPopularProductList();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
