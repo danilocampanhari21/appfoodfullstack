@@ -12,7 +12,7 @@ class ApiClient extends GetConnect implements GetxService{
     token ="";
     _mainHeaders={
       'Content-type':'application/json; charset=UTF-8',
-      'Authorization': 'Bear $token',
+      'Authorization': 'Bearer $token',
     };
   }
   Future<Response> getData(String uri,) async {
