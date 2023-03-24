@@ -1,3 +1,4 @@
+import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/app_column.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
@@ -6,6 +7,7 @@ import 'package:appfoodfullstack/widgets/small_text.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../utils/dimensions.dart';
 
@@ -42,16 +44,18 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     return Column(
       children: [
         //slider section
-        Container(
-          //color: Colors.redAccent,
-          height: Dimensions.pageView,
-          child: PageView.builder(
-              controller: pageController,
-              itemCount: 5,
-              itemBuilder: (context, position){
-                return _buildPageItem(position);
-              }),
-        ),
+        GetBuilder<PopularProductController>(builder: (popularProducts){
+          return Container(
+            //color: Colors.redAccent,
+            height: Dimensions.pageView,
+            child: PageView.builder(
+                controller: pageController,
+                itemCount: 5,
+                itemBuilder: (context, position){
+                  return _buildPageItem(position);
+                }),
+          )
+        })
         //dots
         new DotsIndicator(
           dotsCount: 5,
