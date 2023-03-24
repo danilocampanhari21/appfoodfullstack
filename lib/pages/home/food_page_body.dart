@@ -54,8 +54,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 itemBuilder: (context, position){
                   return _buildPageItem(position);
                 }),
-          )
-        })
+          );
+        }),
         //dots
         new DotsIndicator(
           dotsCount: 5,
