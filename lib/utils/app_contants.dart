@@ -1,3 +1,3 @@
 class AppConstants{
-  static const String ="DBFood";
+  static const String APP_NAME ="DBFood";
 }
