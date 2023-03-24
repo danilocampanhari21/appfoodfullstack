@@ -59,7 +59,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //dots
         GetBuilder<PopularProductController>(builder: (popularProducts){
           return DotsIndicator(
-            dotsCount: 5,
+            dotsCount: popularProducts.popularProductList.length,
             position: _currPageValue,
             decorator: DotsDecorator(
               activeColor: AppColors.mainColor,
