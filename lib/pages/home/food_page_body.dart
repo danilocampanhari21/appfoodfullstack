@@ -57,7 +57,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           );
         }),
         //dots
-        GetBuilder<PopularProductController>(builder: (popularProducts){
+        GetBuilder<PopularProductController>(builder:(popularProducts){
           return DotsIndicator(
             dotsCount: popularProducts.popularProductList.length,
             position: _currPageValue,
