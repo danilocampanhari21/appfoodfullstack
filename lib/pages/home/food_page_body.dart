@@ -44,7 +44,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     return Column(
       children: [
         //slider section
-        GetBuilder<PopularProductController>(builder: (popularProducts){
+        GetBuilder<PopularProductController>(builder:(popularProducts){
           return Container(
             //color: Colors.redAccent,
             height: Dimensions.pageView,
