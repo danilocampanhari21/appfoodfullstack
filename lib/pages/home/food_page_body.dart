@@ -58,7 +58,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         }),
         //dots
         GetBuilder<PopularProductController>(builder: (popularProducts){
-          return new DotsIndicator(
+          return DotsIndicator(
             dotsCount: 5,
             position: _currPageValue,
             decorator: DotsDecorator(
