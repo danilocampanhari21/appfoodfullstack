@@ -44,31 +44,29 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     return Column(
       children: [
         //slider section
-        GetBuilder<PopularProductController>(builder:(popularProducts){
+        GetBuilder<PopularProductController>(builder: (popularProducts){
           return Container(
             //color: Colors.redAccent,
             height: Dimensions.pageView,
             child: PageView.builder(
                 controller: pageController,
-                itemCount: popularProducts.popularProductList.length,
+                itemCount: 5,
                 itemBuilder: (context, position){
-                  return _buildPageItem(position, popularProducts.popularProductList[position]);
+                  return _buildPageItem(position);
                 }),
           );
         }),
         //dots
-        GetBuilder<PopularProductController>(builder:(popularProducts){
-          return DotsIndicator(
-            dotsCount: popularProducts.popularProductList.isEmpty?1:popularProducts.popularProductList.length,
-            position: _currPageValue,
-            decorator: DotsDecorator(
-              activeColor: AppColors.mainColor,
-              size: const Size.square(9.0),
-              activeSize: const Size(18.0, 9.0),
-              activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-            ),
-          );
-        }),
+        new DotsIndicator(
+          dotsCount: 5,
+          position: _currPageValue,
+          decorator: DotsDecorator(
+            activeColor: AppColors.mainColor,
+            size: const Size.square(9.0),
+            activeSize: const Size(18.0, 9.0),
+            activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+          ),
+        ),
         //popular Text
         SizedBox(height: Dimensions.height30,),
         Container(
@@ -169,7 +167,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       ],
     );
   }
-  Widget _buildPageItem(int index, popularProduct){
+  Widget _buildPageItem(int index){
     Matrix4 matrix = new Matrix4.identity();
     if(index==_currPageValue.floor()){
       var currScale = 1-(_currPageValue-index)*(1-_scaleFactor);
