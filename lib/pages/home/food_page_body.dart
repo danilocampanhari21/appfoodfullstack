@@ -50,7 +50,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             height: Dimensions.pageView,
             child: PageView.builder(
                 controller: pageController,
-                itemCount: 5,
+                itemCount: popularProducts.popularProductList.length,
                 itemBuilder: (context, position){
                   return _buildPageItem(position);
                 }),
