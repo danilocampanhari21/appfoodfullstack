@@ -50,7 +50,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             height: Dimensions.pageView,
             child: PageView.builder(
                 controller: pageController,
-                itemCount: 5,
+                itemCount: popularProducts.popularProductList.length,
                 itemBuilder: (context, position){
                   return _buildPageItem(position);
                 }),
@@ -59,7 +59,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //dots
         GetBuilder<PopularProductController>(builder: (popularProducts){
           return DotsIndicator(
-            dotsCount: 5,
+            dotsCount: popularProducts.popularProductList.isEmpty?1:popularProducts.popularProductList.length,
             position: _currPageValue,
             decorator: DotsDecorator(
               activeColor: AppColors.mainColor,
