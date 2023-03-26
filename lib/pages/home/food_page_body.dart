@@ -11,6 +11,7 @@ import 'package:get/get.dart';
 
 import '../../utils/dimensions.dart';
 
+
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
 
