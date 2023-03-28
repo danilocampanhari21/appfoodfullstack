@@ -26,7 +26,7 @@ class Product {
 
 }
 
-class ProductModel {
+  class ProductModel {
   int? id;
   String? name;
   String? description;
