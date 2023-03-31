@@ -1,6 +1,7 @@
 import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/controllers/recommended_product_controller.dart';
 import 'package:appfoodfullstack/models/products_model.dart';
+import 'package:appfoodfullstack/pages/food/popular_food_detail.dart';
 import 'package:appfoodfullstack/utils/app_constants.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/app_column.dart';
@@ -53,6 +54,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             //color: Colors.redAccent,
             height: Dimensions.pageView,
             child: GestureDetector(
+              onTap: (){
+                Get.to(()=>PopularFoodDetail());
+              },
               child: PageView.builder(
                   controller: pageController,
                   itemCount: popularProducts.popularProductList.length,
