@@ -14,15 +14,15 @@ class RecommendedProductController extends GetxController{
 
   Future<void> getRecommendedProductList()async {
     Response response = await recommendedProductRepo.getRecommendedProductList();
-    if(response.statusCode==200){
-      print("got products recommended");
+    if(response.statusCode == 200){
+      print("pegamos os produtos recomendados");
       _recommendedProductList=[];
       _recommendedProductList.addAll(Product.fromJson(response.body).products);
       //print(_popularProductList);
       _isLoaded=true;
       update();
     }else {
-      print("could not get products recommended");
+      print("nao foi possivel pegar os produtos recomendados");
     }
   }
 }
