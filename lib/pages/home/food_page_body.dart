@@ -103,7 +103,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           return recommendedProduct.isLoaded?ListView.builder(
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemCount: 10,
+              itemCount: recommendedProduct.recommendedProductList.length,
               itemBuilder: (context, index){
                 return Container(
                   margin: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20, bottom: Dimensions.height10),
@@ -118,8 +118,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             color: Colors.white38,
                             image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage(
-                                    "assets/image/food0.png"
+                                image: NetworkImage(
+                                    AppConstants.BASE_URL+"/uploads/"+recommendedProduct.recommendedProductList[index].img!
                                 )
                             )
                         ),
