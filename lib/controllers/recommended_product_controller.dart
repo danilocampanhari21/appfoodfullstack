@@ -1,4 +1,5 @@
 import '../data/repository/popular_product_repo.dart';
+import '../data/repository/recommended_product_repo.dart';
 import '../models/products_model.dart';
 
 import 'package:get/get.dart';
@@ -13,7 +14,7 @@ class RecommendedProductController extends GetxController{
   bool get isLoaded=>_isLoaded;
 
   Future<void> getRecommendedProductList()async {
-    Response response = await recommendedProductRepo.getRecommendedProductList();
+    Response response = await recommendedProductRepo.getRecommendedList();
     if(response.statusCode==200){
       print("got products");
       _recommendedProductList=[];
