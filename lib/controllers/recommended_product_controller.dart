@@ -1,4 +1,3 @@
-import '../data/repository/popular_product_repo.dart';
 import '../data/repository/recommended_product_repo.dart';
 import '../models/products_model.dart';
 
