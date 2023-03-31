@@ -57,7 +57,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 itemBuilder: (context, position){
                   return _buildPageItem(position, popularProducts.popularProductList[position]);
                 }),
-          ):Container();
+          ):CircularProgressIndicator(
+            color: AppColors.mainColor,
+          );
         }),
         //dots
         GetBuilder<PopularProductController>(builder:(popularProducts){
