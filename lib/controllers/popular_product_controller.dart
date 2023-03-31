@@ -9,7 +9,8 @@ class PopularProductController extends GetxController{
   List<ProductModel> _popularProductList=[];
   List<ProductModel> get popularProductList =>_popularProductList;
 
-  bool isLoaded = false;
+  bool _isLoaded = false;
+  bool get isLoaded=>_isLoaded;
 
   Future<void> getPopularProductList()async {
     Response response = await popularProductRepo.getPopularProductList();
