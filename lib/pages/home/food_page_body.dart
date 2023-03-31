@@ -1,4 +1,5 @@
 import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
+import 'package:appfoodfullstack/controllers/recommended_product_controller.dart';
 import 'package:appfoodfullstack/models/products_model.dart';
 import 'package:appfoodfullstack/utils/app_constants.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
@@ -98,9 +99,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         //list of food and images
 
 
-        ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
+        GetBuilder<RecommendedProductController>(builder: (recommendedProduct){
+          return recommendedProduct.isLoaded?ListView.builder(
+              physics: NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
               itemCount: 10,
               itemBuilder: (context, index){
                 return Container(
@@ -115,7 +117,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             borderRadius: BorderRadius.circular(Dimensions.radius20),
                             color: Colors.white38,
                             image: DecorationImage(
-                              fit: BoxFit.cover,
+                                fit: BoxFit.cover,
                                 image: AssetImage(
                                     "assets/image/food0.png"
                                 )
@@ -169,7 +171,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     ],
                   ),
                 );
-              }),
+              }):CircularProgressIndicator(
+            color: AppColors.mainColor,
+          );
+        })
 
       ],
     );
