@@ -1,4 +1,4 @@
-import 'package:appfoodfullstack/utils/app_contants.dart';
+import 'package:appfoodfullstack/utils/app_constants.dart';
 import 'package:get/get.dart';
 
 class ApiClient extends GetConnect implements GetxService{

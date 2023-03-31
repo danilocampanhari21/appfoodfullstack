@@ -1,6 +1,6 @@
 import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/models/products_model.dart';
-import 'package:appfoodfullstack/utils/app_contants.dart';
+import 'package:appfoodfullstack/utils/app_constants.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/app_column.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
