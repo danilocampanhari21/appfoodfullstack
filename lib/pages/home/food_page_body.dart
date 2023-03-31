@@ -1,5 +1,6 @@
 import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/models/products_model.dart';
+import 'package:appfoodfullstack/utils/app_contants.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/widgets/app_column.dart';
 import 'package:appfoodfullstack/widgets/big_text.dart';
@@ -59,8 +60,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           );
         }),
         //dots
-        GetBuilder<PopularProductController>(builder: (popularProducts){
-          return DotsIndicator(
+        GetBuilder<PopularProductController>(builder:(popularProducts){
+          return  DotsIndicator(
             dotsCount: popularProducts.popularProductList.isEmpty?1:popularProducts.popularProductList.length,
             position: _currPageValue,
             decorator: DotsDecorator(
@@ -205,8 +206,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 color: index.isEven?Color(0xFF69c5df):Color(0xFF9294cc),
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage(
-                        "assets/image/food0.png"
+                    image: NetworkImage(
+                        AppConstants.BASE_URL+popularProduct.img!
                     )
                 )
             ),
