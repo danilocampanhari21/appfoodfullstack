@@ -10,16 +10,24 @@ class RouteHelper {
 
   static String GetInitial()=>'$initial';
   static String getPopularFood()=>'$popularFood';
+  static String getRecommendedFood()=>'$recommendedFood';
 
 
   static List<GetPage> routes=[
     GetPage(name: initial, page: ()=>MainFoodPage()),
 
-    GetPage(name:"/popular-food", page:(){
+    GetPage(name:popularFood, page:(){
       //print("popular food pegou o chamado");
       return PopularFoodDetail();
     },
           transition: Transition.fadeIn
     ),
+
+    GetPage(name:"/popular-food", page:(){
+      //print("popular food pegou o chamado");
+      return PopularFoodDetail();
+    },
+        transition: Transition.fadeIn
+    )
   ];
 }
