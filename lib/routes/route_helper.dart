@@ -11,6 +11,7 @@ class RouteHelper {
   static List<GetPage> routes=[
     GetPage(name: "/", page: ()=>MainFoodPage()),
     GetPage(name:"/popular-food", page:(){
+      //print("popular food pegou o chamado");
       return PopularFoodDetail();
     }),
   ];
