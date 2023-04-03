@@ -15,7 +15,7 @@ class RouteHelper {
 
     GetPage(name:"/popular-food", page:(){
 
-      //print("popular food pegou o chamado");
+      print("popular food pegou o chamado");
       return PopularFoodDetail();
     }),
   ];
