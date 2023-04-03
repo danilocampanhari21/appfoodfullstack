@@ -13,6 +13,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../routes/route_helper.dart';
 import '../../utils/dimensions.dart';
 
 
@@ -55,7 +56,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             height: Dimensions.pageView,
             child: GestureDetector(
               onTap: (){
-                Get.to(()=>PopularFoodDetail());
+                Get.to(RouteHelper.popularFood);
               },
               child: PageView.builder(
                   controller: pageController,
