@@ -23,7 +23,7 @@ class RouteHelper {
           transition: Transition.fadeIn
     ),
 
-    GetPage(name:"/popular-food", page:(){
+    GetPage(name:recommendedFood, page:(){
       //print("popular food pegou o chamado");
       return PopularFoodDetail();
     },
