@@ -7,6 +7,6 @@ class RouteHelper {
 
 
   static List<GetPage> routes=[
-    GetPage(name: "/", page: ()=>MainFoodPage());
+    GetPage(name: "/", page: ()=>MainFoodPage()),
   ];
 }
