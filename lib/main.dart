@@ -4,6 +4,7 @@ import 'package:appfoodfullstack/pages/food/popular_food_detail.dart';
 import 'package:appfoodfullstack/pages/food/recommended_food_detail.dart';
 import 'package:appfoodfullstack/pages/home/food_page_body.dart';
 import 'package:appfoodfullstack/pages/home/main_food_page.dart';
+import 'package:appfoodfullstack/routes/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'helper/dependencies.dart' as dep;
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
 
       home: MainFoodPage(),
+      initialRoute: RouteHelper.initial,
     );
   }
 }
