@@ -43,7 +43,12 @@ class PopularFoodDetail extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                AppIcon(icon: Icons.arrow_back_ios),
+                GestureDetector(
+                    onTap:(){
+
+                    },
+                    child:
+                AppIcon(icon: Icons.arrow_back_ios)),
                 AppIcon(icon: Icons.shopping_cart_outlined)
               ],
           )),
