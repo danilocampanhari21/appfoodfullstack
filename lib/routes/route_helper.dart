@@ -6,6 +6,7 @@ import '../pages/home/main_food_page.dart';
 class RouteHelper {
   static const String initial="/";
   static const String popularFood="/popular-food";
+  static const String recommendedFood="/recommended-food";
 
   static String GetInitial()=>'$initial';
   static String getPopularFood()=>'$popularFood';
