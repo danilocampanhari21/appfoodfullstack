@@ -3,12 +3,15 @@ import 'package:appfoodfullstack/widgets/app_icon.dart';
 import 'package:appfoodfullstack/widgets/exandable_text_widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../utils/colors.dart';
 import '../../utils/dimensions.dart';
 import '../../widgets/big_text.dart';
 import '../../widgets/icon_and_text_widget.dart';
 import '../../widgets/small_text.dart';
+import '../home/main_food_page.dart';
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({Key? key}) : super(key: key);
@@ -45,7 +48,7 @@ class PopularFoodDetail extends StatelessWidget {
               children: [
                 GestureDetector(
                     onTap:(){
-
+                      Get.to(()=>MainFoodPage());
                     },
                     child:
                 AppIcon(icon: Icons.arrow_back_ios)),
