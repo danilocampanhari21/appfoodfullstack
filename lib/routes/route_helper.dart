@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 
 import '../pages/food/popular_food_detail.dart';
+import '../pages/food/recommended_food_detail.dart';
 import '../pages/home/main_food_page.dart';
 
 class RouteHelper {
@@ -25,7 +26,7 @@ class RouteHelper {
 
     GetPage(name:recommendedFood, page:(){
       //print("popular food pegou o chamado");
-      return PopularFoodDetail();
+      return RecommendedFoodDetail();
     },
         transition: Transition.fadeIn
     )
