@@ -113,7 +113,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               itemCount: recommendedProduct.recommendedProductList.length,
               itemBuilder: (context, index){
                 return GestureDetector(
+                  onTap: (){
 
+                  },
                   child: Container(
                     margin: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20, bottom: Dimensions.height10),
                     child: Row(
