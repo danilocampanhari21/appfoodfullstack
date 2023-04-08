@@ -154,7 +154,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                 children: [
                                   BigText(text:recommendedProduct.recommendedProductList[index].name!),
                                   SizedBox(height: Dimensions.height10,),
-                                  SmallText(text: "with chinese characteristics"),
+                                  SmallText(text: "chinese characteristics"),
                                   SizedBox(height: Dimensions.height10,),
 
                                   Row(
