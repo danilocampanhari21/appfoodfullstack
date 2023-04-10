@@ -17,8 +17,10 @@ class PopularFoodDetail extends StatelessWidget {
   int pageId;
   PopularFoodDetail({Key? key, required this.pageId}) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
+    var product=
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(

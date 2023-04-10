@@ -1,6 +1,5 @@
 import '../data/repository/popular_product_repo.dart';
 import '../models/products_model.dart';
-
 import 'package:get/get.dart';
 
 class PopularProductController extends GetxController{
@@ -15,14 +14,14 @@ class PopularProductController extends GetxController{
   Future<void> getPopularProductList()async {
     Response response = await popularProductRepo.getPopularProductList();
     if(response.statusCode==200){
-      print("esta funcionaod por aqui, esperando que apareça isso");
+      print("esta functional por aqua, desperado que apparel i sso");
       _popularProductList=[];
       _popularProductList.addAll(Product.fromJson(response.body).products);
       //print(_popularProductList);
       _isLoaded=true;
       update();
     }else {
-      print("nao esta funcionando - popular aqui");
+
     }
   }
 }
