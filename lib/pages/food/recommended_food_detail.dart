@@ -1,4 +1,6 @@
+import 'package:appfoodfullstack/controllers/recommended_product_controller.dart';
 import 'package:appfoodfullstack/routes/route_helper.dart';
+import 'package:appfoodfullstack/utils/app_constants.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/utils/dimensions.dart';
 import 'package:appfoodfullstack/widgets/app_icon.dart';
@@ -9,15 +11,19 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class RecommendedFoodDetail extends StatefulWidget {
-  const RecommendedFoodDetail({Key? key}) : super(key: key);
+  final int pageId;
+  const RecommendedFoodDetail({Key? key, required this.pageId}) : super(key: key);
 
   @override
   State<RecommendedFoodDetail> createState() => _RecommendedFoodDetailState();
 }
 
 class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
+  get pageId => null;
+
   @override
   Widget build(BuildContext context) {
+    var product = Get.find<RecommendedProductController>().recommendedProductList[pageId];
     return Scaffold(
       backgroundColor: Colors.white,
       body: CustomScrollView(
@@ -58,8 +64,8 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
             backgroundColor: AppColors.yellowColor,
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
-                "assets/image/food0.png",
+              background: Image.network(
+                AppConstants.BASE_URL+AppConstants.UPLOAD_URL+product.img!,
                 width: double.maxFinite,
                 fit: BoxFit.cover,
               ),
