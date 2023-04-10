@@ -1,3 +1,4 @@
+import 'package:appfoodfullstack/controllers/popular_product_controller.dart';
 import 'package:appfoodfullstack/widgets/app_column.dart';
 import 'package:appfoodfullstack/widgets/app_icon.dart';
 import 'package:appfoodfullstack/widgets/exandable_text_widgets.dart';
@@ -20,7 +21,7 @@ class PopularFoodDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var product=
+    var product= Get.find<PopularProductController>().popularProductList[pageId];
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
