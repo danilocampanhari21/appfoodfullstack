@@ -18,7 +18,7 @@ class RouteHelper {
     GetPage(name: initial, page: ()=>MainFoodPage()),
 
     GetPage(name:popularFood, page:(){
-
+      var pageId=Get.parameters['pageId'];
       return PopularFoodDetail();
     },
           transition: Transition.fadeIn
