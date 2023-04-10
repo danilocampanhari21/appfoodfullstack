@@ -10,7 +10,7 @@ class RouteHelper {
   static const String recommendedFood="/recommended-food";
 
   static String getInitial()=>'$initial';
-  static String getPopularFood(int pageId)=>'$popularFood';
+  static String getPopularFood(int pageId)=>'$popularFood?';
   static String getRecommendedFood()=>'$recommendedFood';
 
 
@@ -18,14 +18,14 @@ class RouteHelper {
     GetPage(name: initial, page: ()=>MainFoodPage()),
 
     GetPage(name:popularFood, page:(){
-      //print("popular food pegou o chamado");
+
       return PopularFoodDetail();
     },
           transition: Transition.fadeIn
     ),
 
     GetPage(name:recommendedFood, page:(){
-      //print("popular food pegou o chamado");
+
       return RecommendedFoodDetail();
     },
         transition: Transition.fadeIn
