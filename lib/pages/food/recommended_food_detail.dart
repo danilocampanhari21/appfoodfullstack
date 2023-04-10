@@ -30,7 +30,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
               children: [
                 GestureDetector(
                   onTap: (){
-                    Get.toNamed(RouteHelper.GetInitial());
+                    Get.toNamed(RouteHelper.getInitial());
                   },
                   child: AppIcon(icon: Icons.clear),
                 ),

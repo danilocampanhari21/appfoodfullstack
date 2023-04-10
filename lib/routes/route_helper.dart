@@ -9,7 +9,7 @@ class RouteHelper {
   static const String popularFood="/popular-food";
   static const String recommendedFood="/recommended-food";
 
-  static String GetInitial()=>'$initial';
+  static String getInitial()=>'$initial';
   static String getPopularFood()=>'$popularFood';
   static String getRecommendedFood()=>'$recommendedFood';
 
