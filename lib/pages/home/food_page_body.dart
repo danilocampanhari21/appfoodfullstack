@@ -54,17 +54,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           return popularProducts.isLoaded?Container(
             //color: Colors.redAccent,
             height: Dimensions.pageView,
-            child: GestureDetector(
-              onTap: (){
-                Get.toNamed(RouteHelper.getPopularFood());
-              },
+
               child: PageView.builder(
                   controller: pageController,
                   itemCount: popularProducts.popularProductList.length,
                   itemBuilder: (context, position){
                     return _buildPageItem(position, popularProducts.popularProductList[position]);
                   }),
-            ),
+
           ):CircularProgressIndicator(
             color: AppColors.mainColor,
           );
