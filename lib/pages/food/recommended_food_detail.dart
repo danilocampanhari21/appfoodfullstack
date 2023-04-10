@@ -1,3 +1,4 @@
+import 'package:appfoodfullstack/routes/route_helper.dart';
 import 'package:appfoodfullstack/utils/colors.dart';
 import 'package:appfoodfullstack/utils/dimensions.dart';
 import 'package:appfoodfullstack/widgets/app_icon.dart';
@@ -5,6 +6,7 @@ import 'package:appfoodfullstack/widgets/big_text.dart';
 import 'package:appfoodfullstack/widgets/exandable_text_widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class RecommendedFoodDetail extends StatefulWidget {
   const RecommendedFoodDetail({Key? key}) : super(key: key);
@@ -28,7 +30,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
               children: [
                 GestureDetector(
                   onTap: (){
-
+                    Get.toNamed(RouteHelper.GetInitial());
                   },
                   child: AppIcon(icon: Icons.clear),
                 ),
