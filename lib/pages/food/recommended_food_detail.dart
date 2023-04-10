@@ -26,7 +26,11 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                AppIcon(icon: Icons.clear),
+                GestureDetector(
+                  onTap: (){
+
+                  },
+                )
                 AppIcon(icon: Icons.shopping_cart_outlined)
               ],
             ),
