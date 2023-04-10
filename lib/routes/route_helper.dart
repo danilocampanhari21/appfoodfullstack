@@ -25,7 +25,7 @@ class RouteHelper {
     ),
 
     GetPage(name:recommendedFood, page:(){
-
+      var pageId=Get.parameters['pageId'];
       return RecommendedFoodDetail();
     },
         transition: Transition.fadeIn
