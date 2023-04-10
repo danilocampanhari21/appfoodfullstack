@@ -30,7 +30,8 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                   onTap: (){
 
                   },
-                )
+                  child: AppIcon(icon: Icons.clear),
+                ),
                 AppIcon(icon: Icons.shopping_cart_outlined)
               ],
             ),
