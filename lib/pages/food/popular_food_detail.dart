@@ -80,7 +80,7 @@ class PopularFoodDetail extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    AppColumn(text: "Chinese Side"),
+                    AppColumn(text:product.name!),
                     SizedBox(height: Dimensions.height20,),
                     BigText(text: "Introdução"),
                     SizedBox(height: Dimensions.height20,),
