@@ -14,6 +14,7 @@ class PopularProductController extends GetxController{
   Future<void> getPopularProductList()async {
     Response response = await popularProductRepo.getPopularProductList();
     if(response.statusCode==200){
+      // ignore: avoid_print
       print("esta funcionando por aqui, esperando que apareça isso");
       _popularProductList=[];
       _popularProductList.addAll(Product.fromJson(response.body).products);
@@ -21,6 +22,7 @@ class PopularProductController extends GetxController{
       _isLoaded=true;
       update();
     }else {
+      // ignore: avoid_print
       print("nao esta funcionando - popular aqui");
     }
   }
